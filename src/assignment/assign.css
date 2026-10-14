@@ -1,0 +1,55 @@
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f2f2f2;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.box {
+  width: 320px;
+  display: flex;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  padding: 5px 10px;
+}
+
+.box.red {
+  border-color: red;
+}
+
+.box.green {
+  border-color: green;
+}
+
+.box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 14px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+}

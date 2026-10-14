@@ -1,0 +1,360 @@
+/* Overall page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6fb;
+    color: #1e293b;
+}
+
+#root {
+    min-height: 100vh;
+}
+
+button,
+input {
+    font: inherit;
+}
+/* Main container */
+.user-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Page heading */
+.user-container h1 {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 30px;
+}
+
+/* Add User section */
+.add-user-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Section headings */
+.add-user-section h2,
+.user-list-section h2 {
+    margin-top: 0;
+    color: #334155;
+}
+/* Add User form layout */
+.add-user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Form labels */
+.add-user-form label {
+    font-weight: 600;
+    color: #475569;
+}
+
+/* Form inputs */
+.add-user-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Input focus effect */
+.add-user-form input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Add User button */
+.add-user-form button {
+    padding: 12px 20px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+.add-user-form button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Disabled button */
+.add-user-form button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+/* User list layout */
+.user-list-section {
+    margin-top: 30px;
+}
+
+/* Responsive user cards grid */
+.user-list-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* User Details heading */
+.user-list-section h2 {
+    grid-column: 1 / -1;
+}
+
+/* Individual user card */
+.user-card {
+    background-color: #ffffff;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Card hover effect */
+.user-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* User name */
+.user-card h3 {
+    color: #2563eb;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+/* User details */
+.user-card p {
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+/* Common styling for user card buttons */
+.user-card button {
+    padding: 9px 16px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 12px;
+    transition: background-color 0.3s;
+}
+
+/* Edit button */
+.user-card button:first-of-type {
+    background-color: #2563eb;
+}
+
+.user-card button:first-of-type:hover {
+    background-color: #1d4ed8;
+}
+
+/* Delete button */
+.user-card button:last-of-type {
+    background-color: #dc2626;
+}
+
+.user-card button:last-of-type:hover {
+    background-color: #b91c1c;
+}
+
+/* Disabled buttons */
+.user-card button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+/* Edit User section */
+.edit-user-section {
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Edit User heading */
+.edit-user-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #334155;
+}
+
+/* Edit User labels */
+.edit-user-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #475569;
+}
+
+/* Edit User inputs */
+.edit-user-section input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+/* Input focus */
+.edit-user-section input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Edit User buttons */
+.edit-user-section button {
+    padding: 10px 16px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Update button */
+.edit-user-section button:first-of-type {
+    background-color: #16a34a;
+}
+
+/* Cancel button */
+.edit-user-section button:last-of-type {
+    background-color: #64748b;
+}
+
+/* Button hover effects */
+.edit-user-section button:first-of-type:hover {
+    background-color: #15803d;
+}
+
+.edit-user-section button:last-of-type:hover {
+    background-color: #475569;
+}
+/* Status messages */
+.status-message {
+    padding: 12px 16px;
+    margin: 20px 0;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Success message */
+.success-message {
+    color: #166534;
+    background-color: #dcfce7;
+    border: 1px solid #86efac;
+}
+
+/* Error message */
+.error-message {
+    color: #991b1b;
+    background-color: #fee2e2;
+    border: 1px solid #fca5a5;
+}
+/* Responsive design for tablets and mobile */
+@media (max-width: 768px) {
+    .user-container {
+        padding: 16px;
+    }
+
+    .add-user-section {
+        padding: 18px;
+    }
+
+    .user-list-section {
+        grid-template-columns: 1fr;
+    }
+
+    .user-card {
+        padding: 18px;
+    }
+
+    .edit-user-section {
+        padding: 18px;
+        margin: 20px 0;
+    }
+
+    .user-card button {
+        margin-right: 8px;
+    }
+}
+
+/* Extra-small mobile screens */
+@media (max-width: 400px) {
+    .user-container {
+        padding: 10px;
+    }
+
+    .user-container h1 {
+        font-size: 24px;
+    }
+
+    .add-user-section,
+    .edit-user-section {
+        padding: 14px;
+    }
+
+    .user-card button {
+        padding: 8px 12px;
+        margin-right: 6px;
+    }
+}
+/* Make the Add User form more compact */
+.add-user-form {
+    max-width: 500px;
+    gap: 6px;
+}
+
+/* Reduce input box size */
+.add-user-form input {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* Reduce Add User button size */
+.add-user-form button {
+    width: fit-content;
+    padding: 9px 18px;
+    font-size: 14px;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+
+.delete-popup {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    color: black;
+    padding: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+    z-index: 9999;
+}

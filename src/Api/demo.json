@@ -1,0 +1,44 @@
+{
+  "college": {
+    "courses": {
+      "students": [
+        {
+          "id": 1,
+          "name": "Sai",
+          "course": "Java",
+          "marks": {
+            "java": 85,
+            "sql": 78
+          }
+        },
+        {
+          "id": 2,
+          "name": "Rahul",
+          "course": "React",
+          "marks": {
+            "javascript": 90,
+            "react": 88
+          }
+        },
+        {
+          "id": 3,
+          "name": "Priya",
+          "course": "Python",
+          "marks": {
+            "python": 92,
+            "sql": 84
+          }
+        },
+        {
+          "id": 4,
+          "name": "Anjali",
+          "course": "Java",
+          "marks": {
+            "java": 89,
+            "sql": 91
+          }
+        }
+      ]
+    }
+  }
+}
